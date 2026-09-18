@@ -1,0 +1,1 @@
+Welcome to my JavaScript Projects repository. This repository contains the coding projects, exercises, and challenges I complete throughout my JavaScript course. I will regularly update this repository as I learn new JavaScript concepts and develop my programming skills.
