@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Canada | One Page Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h2 class="logo">Explore Canada</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Explore Beautiful Canada</h1>
+                <p>
+                    Discover beautiful mountains, lakes, cities, and natural
+                    landscapes across Canada.
+                </p>
+
+                <a href="#gallery" class="btn">View Gallery</a>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About Canada</h2>
+
+            <p>
+                Canada is famous for its beautiful natural scenery, mountains,
+                forests, lakes, and modern cities. This one-page website
+                showcases some beautiful travel destinations through an
+                interactive image gallery.
+            </p>
+        </section>
+
+        <!-- GALLERY -->
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+
+            <p class="section-text">
+                Click any image to open it in the lightbox.
+            </p>
+
+            <div class="gallery">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=900&q=80"
+                    alt="Canadian mountains and lake"
+                    onclick="openLightbox(this)"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=900&q=80"
+                    alt="Toronto skyline"
+                    onclick="openLightbox(this)"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80"
+                    alt="Beautiful mountain landscape"
+                    onclick="openLightbox(this)"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1439853949127-fa647821eba0?auto=format&fit=crop&w=900&q=80"
+                    alt="Lake surrounded by mountains"
+                    onclick="openLightbox(this)"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
+                    alt="Nature landscape"
+                    onclick="openLightbox(this)"
+                >
+
+                <img
+                    src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+                    alt="Mountain lake"
+                    onclick="openLightbox(this)"
+                >
+
+            </div>
+        </section>
+
+        <!-- LIGHTBOX -->
+        <div id="lightbox" class="lightbox">
+
+            <span class="close" onclick="closeLightbox()">&times;</span>
+
+            <button
+                class="previous"
+                onclick="changeImage(-1)"
+                aria-label="Previous image">
+                &#10094;
+            </button>
+
+            <img
+                id="lightboxImage"
+                class="lightbox-content"
+                src=""
+                alt="Expanded gallery image"
+            >
+
+            <button
+                class="next"
+                onclick="changeImage(1)"
+                aria-label="Next image">
+                &#10095;
+            </button>
+
+            <p id="caption"></p>
+
+        </div>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <p class="section-text">
+                Have a question about our travel gallery? Send us a message.
+            </p>
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    rows="5"
+                    placeholder="Your Message"
+                    required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Explore Canada | One-Page Website Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
